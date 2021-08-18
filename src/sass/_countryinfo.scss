@@ -1,0 +1,40 @@
+.country_info_section{
+    margin-top: 5%;
+    a{
+        text-decoration: none;
+    }
+}
+.country_info_desc{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    .flag{
+        max-width: 450px;
+        img{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 1079px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.btn_back{
+    cursor: pointer;
+    padding: 8px 30px;
+    outline:none;
+    border: none;
+    background-color: $DarkBlue;
+    box-shadow: 1px 2px 2px black;
+    border-radius: 5px;
+    color: $VeryDarkBlueLM;
+    display: flex;
+    align-items: center;
+    i{
+        margin-right: 7px;
+    }
+    a{
+        color: $White;
+    }
+}

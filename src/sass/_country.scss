@@ -1,0 +1,110 @@
+
+// .country_container {
+//     // display: grid;
+//     // grid-template-columns: repeat(5, 1fr);
+//     // gap: 2rem;
+//     // background-color: $VeryLight;
+
+//     .country {
+//         background-color: $DarkBlue;
+//         border: 1px solid #dddd;
+//         height: auto;
+//         border-radius: 10px;
+//         margin-bottom: 50px;
+
+//         a {
+//             text-decoration: none;
+//         }
+//         img {
+//             width: 100%;
+//             height: 200px;
+//             border-radius: 10px;
+//         }
+//         .country_desc {
+//             padding-right: 15px;
+//             padding-left: 15px;
+//             padding-bottom: 15px;
+//             p {
+//                 color: $VeryDarkBlueLM;
+//             }
+//         }
+//         &:hover{
+            
+//         }
+//     }
+//     @media screen and (max-width: 1050px) {
+//         grid-template-columns: repeat(3, 1fr);
+//     }
+//     @media screen and (max-width: 734px) {
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+//     @media screen and (max-width: 580px) {
+//         grid-template-columns: repeat(1, 1fr);
+//     }
+// }
+
+
+.country_container {
+    // display: grid;
+    // grid-template-columns: repeat(5, 1fr);
+    // gap: 2rem;
+    // background-color: $VeryLight;
+    max-width: 1200px;
+    margin: 0 auto;
+    .country__label{
+        display: grid;
+            grid-template-columns: repeat(4,1fr);
+            align-items: center;
+            text-align: center;
+            padding-left: 110px;
+    
+            p{
+                font-weight: 700;
+                @media screen and (max-width: 713px){
+                    font-size: .6rem;  
+                }
+            }
+    }
+    .country {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        padding: 0px 5px;
+        margin-bottom: 20px;
+        transition: .2s linear;
+        &:hover{
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.2);
+        }
+        a {
+            text-decoration: none;
+        }
+        
+        .country_flag{
+            height: 80px;
+            width: 110px;
+            margin-right: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            @media screen and (max-width: 713px){
+                height: 50px;
+            }
+        }
+        .country_desc {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            p {
+                color: $VeryDarkBlueLM;
+            }
+        }
+        @media screen and (max-width: 713px){
+            font-size: .6rem;  
+        }
+    }
+}
