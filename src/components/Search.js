@@ -8,7 +8,7 @@ function Search() {
     const [searchInput, setSearchInput] = useState("");
     const [searchCountry, setSearchCountry] = useState([]);
 
-    const url = `https://restcountries.eu/rest/v2/name/`;
+    const url = `https://restcountries.com/v2/name/`;
 
     const searchInputHandler = e => {
         setSearchInput(e.target.value);

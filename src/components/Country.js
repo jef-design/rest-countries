@@ -5,7 +5,7 @@ import CountryCard from "./CountryCard";
 
 
 function Country() {
-    const url = "https://restcountries.eu/rest/v2/all";
+    const url = "https://restcountries.com/v2/all";
     const setcountries = useSelector(state => state.allcountry.fetchcountries);
     const dispatch = useDispatch();
     

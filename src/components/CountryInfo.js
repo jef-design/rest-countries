@@ -12,7 +12,7 @@ function CountryInfo() {
     const setcountry = useSelector((state) => state.selectedcountry.country);
     console.log(setcountry);
     const dispatch = useDispatch();
-    const url = `https://restcountries.eu/rest/v2/name/${name}`;
+    const url = `https://restcountries.com/v2/name/${name}`;
 
     const fetchCountryDetails = async () => {
         try {
